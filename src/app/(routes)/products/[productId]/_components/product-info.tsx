@@ -1,6 +1,9 @@
+"use client";
+
 import { ShoppingCartIcon } from "lucide-react";
 import { FC } from "react";
 import { Button } from "~/components/ui/button";
+import useCart from "~/hooks/use-cart";
 import { Product } from "~/lib/types";
 
 type Props = {
@@ -8,6 +11,11 @@ type Props = {
 };
 
 export const ProductInfo: FC<Props> = ({ product }) => {
+  const cart = useCart();
+  const onAddToCart = () => {
+    cart.addItem(product);
+  };
+
   return (
     <div>
       <h1 className="text-3xl font-bold text-gray-900">
@@ -33,7 +41,10 @@ export const ProductInfo: FC<Props> = ({ product }) => {
         </div>
       </div>
       <div className="mt-10 gap-x-3">
-        <Button className="flex items-center gap-x-2 rounded-full px-4 py-2">
+        <Button
+          className="flex items-center gap-x-2 rounded-full px-4 py-2"
+          onClick={() => onAddToCart}
+        >
           <p>Add to Cart</p>
           <ShoppingCartIcon />
         </Button>

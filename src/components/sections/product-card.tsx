@@ -1,3 +1,5 @@
+"use client";
+
 import { FC } from "react";
 import { Product } from "~/lib/types";
 import {
@@ -12,12 +14,19 @@ import Image from "next/image";
 import { ShoppingCartIcon } from "lucide-react";
 import { Button } from "../ui/button";
 import Link from "next/link";
+import useCart from "~/hooks/use-cart";
 
 type Props = {
   product: Product;
 };
 
 export const ProductCard: FC<Props> = ({ product }) => {
+  const cart = useCart();
+
+  const onAddToCart = () => {
+    cart.addItem(product);
+  };
+
   return (
     <Link href={`/products/${product.productId}`}>
       <Card className="p-0">
@@ -37,7 +46,7 @@ export const ProductCard: FC<Props> = ({ product }) => {
           </div>
         </CardContent>
         <CardFooter className="justify-end w-full">
-          <Button size="icon" variant="outline">
+          <Button size="icon" variant="outline" onClick={() => onAddToCart}>
             <ShoppingCartIcon className="h-4 w-4" />
           </Button>
         </CardFooter>

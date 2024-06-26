@@ -72,8 +72,8 @@ export const PRODUCTS: Product[] = [
     size: SIZES[1],
     color: COLORS[0],
     images: [
-      "http://example.com/products/tshirt-red-1.jpg",
-      "http://example.com/products/tshirt-red-2.jpg",
+      "https://utfs.io/f/bda6cc49-e3a7-4496-b34a-917a02c83aa9-mi9bnt.png",
+      "https://utfs.io/f/66eee41d-429e-4ae3-94d6-9d4b50306e1c-c62oua.jpg",
     ],
   },
   {
@@ -84,8 +84,8 @@ export const PRODUCTS: Product[] = [
     size: SIZES[2],
     color: COLORS[1],
     images: [
-      "http://example.com/products/boots-blue-1.jpg",
-      "http://example.com/products/boots-blue-2.jpg",
+      "https://utfs.io/f/bda6cc49-e3a7-4496-b34a-917a02c83aa9-mi9bnt.png",
+      "https://utfs.io/f/66eee41d-429e-4ae3-94d6-9d4b50306e1c-c62oua.jpg",
     ],
   },
   {
@@ -108,8 +108,8 @@ export const PRODUCTS: Product[] = [
     size: SIZES[1],
     color: COLORS[0],
     images: [
-      "http://example.com/products/sneakers-red-1.jpg",
-      "http://example.com/products/sneakers-red-2.jpg",
+      "https://utfs.io/f/bda6cc49-e3a7-4496-b34a-917a02c83aa9-mi9bnt.png",
+      "https://utfs.io/f/66eee41d-429e-4ae3-94d6-9d4b50306e1c-c62oua.jpg",
     ],
   },
 ];
