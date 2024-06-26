@@ -14,3 +14,25 @@ export type Billboard = {
   billboardLabel: string;
   imageUrl: string;
 };
+
+export type Product = {
+  productId: string;
+  category: Category;
+  productName: string;
+  price: string;
+  size: Size;
+  color: Color;
+  Images: string[];
+};
+
+export type Size = {
+  sizeId: string;
+  name: string;
+  value: string;
+};
+
+export type Color = {
+  colorId: string;
+  name: string;
+  value: string;
+};
