@@ -3,6 +3,7 @@ import { FC } from "react";
 import { Container } from "~/components/container";
 import { MainNav } from "./main-nav";
 import { Category } from "~/lib/types";
+import { NavbarActions } from "./actions";
 
 export const Navbar: FC = () => {
   const categories: Category[] = [
@@ -25,6 +26,7 @@ export const Navbar: FC = () => {
             <p className="text-xl font-bold">STORE</p>
           </Link>
           <MainNav data={categories} />
+          <NavbarActions />
         </div>
       </Container>
     </div>
