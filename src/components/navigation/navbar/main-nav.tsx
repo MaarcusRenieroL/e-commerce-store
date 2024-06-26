@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { FC } from "react";
 import { cn } from "~/lib/utils";
 import { Category } from "~/lib/types";
+import { CATEGORIES } from "~/lib/constants";
 
 type Props = {
   data: Category[];
@@ -13,7 +14,7 @@ type Props = {
 export const MainNav: FC<Props> = ({ data }) => {
   const pathname = usePathname();
 
-  const routes = data.map((route) => ({
+  const routes = CATEGORIES.map((route) => ({
     href: `/category/${route.categoryId}`,
     title: route.categoryLabel,
     active: pathname === `/category/${route.categoryId}`,
