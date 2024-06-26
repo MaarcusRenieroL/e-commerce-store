@@ -22,7 +22,7 @@ export type Product = {
   price: string;
   size: Size;
   color: Color;
-  Images: string[];
+  images: string[];
 };
 
 export type Size = {

@@ -71,7 +71,7 @@ export const PRODUCTS: Product[] = [
     price: "19.99",
     size: SIZES[1],
     color: COLORS[0],
-    Images: [
+    images: [
       "http://example.com/products/tshirt-red-1.jpg",
       "http://example.com/products/tshirt-red-2.jpg",
     ],
@@ -83,7 +83,7 @@ export const PRODUCTS: Product[] = [
     price: "49.99",
     size: SIZES[2],
     color: COLORS[1],
-    Images: [
+    images: [
       "http://example.com/products/boots-blue-1.jpg",
       "http://example.com/products/boots-blue-2.jpg",
     ],
@@ -95,9 +95,9 @@ export const PRODUCTS: Product[] = [
     price: "39.99",
     size: SIZES[0],
     color: COLORS[2],
-    Images: [
-      "http://example.com/products/hoodie-green-1.jpg",
-      "http://example.com/products/hoodie-green-2.jpg",
+    images: [
+      "https://utfs.io/f/bda6cc49-e3a7-4496-b34a-917a02c83aa9-mi9bnt.png",
+      "https://utfs.io/f/66eee41d-429e-4ae3-94d6-9d4b50306e1c-c62oua.jpg",
     ],
   },
   {
@@ -107,7 +107,7 @@ export const PRODUCTS: Product[] = [
     price: "59.99",
     size: SIZES[1],
     color: COLORS[0],
-    Images: [
+    images: [
       "http://example.com/products/sneakers-red-1.jpg",
       "http://example.com/products/sneakers-red-2.jpg",
     ],
