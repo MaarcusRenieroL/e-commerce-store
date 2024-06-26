@@ -26,13 +26,13 @@ export type Product = {
 };
 
 export type Size = {
-  sizeId: string;
+  id: string;
   name: string;
   value: string;
 };
 
 export type Color = {
-  colorId: string;
+  id: string;
   name: string;
   value: string;
 };

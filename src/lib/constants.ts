@@ -29,35 +29,35 @@ export const CATEGORIES: Category[] = [
 
 export const SIZES: Size[] = [
   {
-    sizeId: "size-001",
+    id: "size-001",
     name: "Small",
     value: "S",
   },
   {
-    sizeId: "size-002",
+    id: "size-002",
     name: "Medium",
     value: "M",
   },
   {
-    sizeId: "size-003",
+    id: "size-003",
     name: "Large",
     value: "L",
   },
 ];
 
-const COLORS: Color[] = [
+export const COLORS: Color[] = [
   {
-    colorId: "color-001",
+    id: "color-001",
     name: "Red",
     value: "#FF0000",
   },
   {
-    colorId: "color-002",
+    id: "color-002",
     name: "Blue",
     value: "#0000FF",
   },
   {
-    colorId: "color-003",
+    id: "color-003",
     name: "Green",
     value: "#00FF00",
   },
